@@ -1,0 +1,15 @@
+
+Ansible: 
+
+* Why ? Automation Platform mostly used for Configuration Tool
+* Agentless architecture
+* Uses YAML or JSON for playbooks
+* Supports multiple platforms (Windows, Linux, Unix, etc.)
+
+Control Node: The machine where Ansible is installed, However, we can use Windows Machine as control node. We can have multiple control nodes.
+Manage Node: Newtwork devices/servers managed with Ansible.Sometimes as called as hosts.
+Agent: Ansible does not require any agent on the managed nodes. It uses SSH to connect to.
+Requirement: Python needs to installed in both Control Node & Mange Node.
+
+
+

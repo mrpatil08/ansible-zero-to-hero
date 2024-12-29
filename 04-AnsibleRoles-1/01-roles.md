@@ -86,3 +86,9 @@ of the infrastructure independently.
 ### Consistency
 Using roles ensures that the same setup and configuration procedures are applied uniformly across
 multiple environments, reducing the risk of configuration drift.
+
+## Usage
+
+```
+ansible-galaxy role init <role-name>
+```

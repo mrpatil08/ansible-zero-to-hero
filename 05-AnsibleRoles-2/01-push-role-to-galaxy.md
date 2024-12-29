@@ -41,5 +41,12 @@ git push -u origin main
 4. Import the Role to Ansible Galaxy
 
 ```
-ansible-galaxy role import <your_github_username> <role-name>
+ansible-galaxy role import <your_github_username> <role-name> --token <token-id>
 ```
+
+5. Install role(s) from Ansible Galaxy
+
+```
+ansible-galaxy role install <ansible-role-name-from-galaxy>
+``
+- Default download path:  cd ~/.ansible/roles/

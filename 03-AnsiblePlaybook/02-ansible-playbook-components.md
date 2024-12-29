@@ -107,3 +107,12 @@ my_collection/
   community.general.my_module:
     option: value
 ```
+
+### Ansible States: `present`, `absent`, and `latest`
+
+| **Aspect**              | **present**                    | **absent**                    | **latest**                    |
+|--------------------------|--------------------------------|--------------------------------|--------------------------------|
+| **Primary Use Case**     | Ensure presence.              | Ensure absence.                | Ensure presence and update.    |
+| **Action on Existing Resources** | No action if present.           | Removes if present.            | Upgrades to the latest version if outdated. |
+| **Action on Missing Resources**  | Installs/creates it.            | No action required.            | Installs/creates it.            |
+
