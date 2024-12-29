@@ -19,3 +19,34 @@ ssh-copy-id -f "-o IdentityFile <PATH TO PEM FILE>" ubuntu@<INSTANCE-PUBLIC-IP>
 - Update `PasswordAuthentication yes`
 - Restart SSH -> `sudo systemctl restart ssh`
 
+```
+ssh-copy-id username@<server-ip>
+```
+
+- If anyone ran into the issue of /usr/bin/ssh-copy-id: ERROR: No identities found while setting up passwordless authentication via public key
+- Make sure you have a PEM file in the default location (~/.ssh/id_rsa) or specify
+- If not, create public key pair using "ssh-keygen"
+
+bash
+root@DJQW8473:/mnt/c/WINDOWS/system32# ssh-keygen
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/root/.ssh/id_ed25519):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /root/.ssh/id_ed25519
+Your public key has been saved in /root/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:/VhUQtn1VknIBHAVGs8Ep3aZ78TFzUiw6nar2LGQkic root@DJQW8473
+The key's randomart image is:
++--[ED25519 256]--+
+|         ..*XX*o+|
+|          . XB+=+|
+|           +o*. B|
+|         ..o. o..|
+|        S o .  + |
+|       . o +  o  |
+|      E + = o  . |
+|       + = + .   |
+|        . +..    |
++----[SHA256]-----+
+
