@@ -50,8 +50,11 @@ all:
 - Syntax:- ansible [pattern] -m [module] -a "[module options]" 
 - ansible -i inventory.ini -m ping all
 - ansible -i inventory.ini -m ping webservers
+<<<<<<< HEAD:02-AdhocCommands/02-inventory.md
 - ansible -i inventory.ini -m ansible.builtin.file -a "dest=/buildagents/ansible mode=755 owner=root group=root state=directory" all
 - ansible -i inventory.ini -m shell -a "systemctl status vsts.agent.tpdevops.DOCKERx2dAgent.A1.service" all
+=======
+>>>>>>> 9256c68d21b1331061645f4bc73ca9083dbe6578:Day-02/02-inventory.md
 
 
 ## Dynamic Inventory
