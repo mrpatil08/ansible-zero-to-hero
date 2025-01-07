@@ -19,6 +19,7 @@ ssh-copy-id -f "-o IdentityFile <PATH TO PEM FILE>" ubuntu@<INSTANCE-PUBLIC-IP>
 - Update `PasswordAuthentication yes`
 - Restart SSH -> `sudo systemctl restart ssh`
 
+#### Run the below command for Passwordless Authentication using Password
 ```
 ssh-copy-id username@<server-ip>
 ```

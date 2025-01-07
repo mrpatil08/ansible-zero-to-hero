@@ -46,15 +46,22 @@ all:
 
 - Alternatively remote servers can be add to "/etc/ansible/hosts" , but it's not recommended
 
+- Ansible Parameters:
+    * ansible_host - Host Name
+    * ansible_user - root / admin
+    * ansible_ssh_pass - password
+    * ansible_connection - ssh/winrm/localhost
+    * ansible_port - 22/5986
+
+
+
+
 ### Ad hoc commands:
 - Syntax:- ansible [pattern] -m [module] -a "[module options]" 
 - ansible -i inventory.ini -m ping all
 - ansible -i inventory.ini -m ping webservers
-<<<<<<< HEAD:02-AdhocCommands/02-inventory.md
 - ansible -i inventory.ini -m ansible.builtin.file -a "dest=/buildagents/ansible mode=755 owner=root group=root state=directory" all
 - ansible -i inventory.ini -m shell -a "systemctl status vsts.agent.tpdevops.DOCKERx2dAgent.A1.service" all
-=======
->>>>>>> 9256c68d21b1331061645f4bc73ca9083dbe6578:Day-02/02-inventory.md
 
 
 ## Dynamic Inventory

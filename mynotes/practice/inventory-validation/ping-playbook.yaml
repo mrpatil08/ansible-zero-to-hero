@@ -1,0 +1,7 @@
+---
+- name: ping
+  hosts: win-app
+
+  tasks:
+    - name: ping the hosts
+      win_ping:

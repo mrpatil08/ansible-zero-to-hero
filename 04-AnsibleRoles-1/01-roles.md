@@ -10,7 +10,7 @@ This modular approach promotes reusability, maintainability, and consistency acr
 playbooks and environments.
 
 ## Key Components of an Ansible Role
-
+ 
 ### Tasks
 The main list of actions that the role performs.
 

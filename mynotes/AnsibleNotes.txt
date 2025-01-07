@@ -8,8 +8,8 @@ Ansible:
 
 Control Node: The machine where Ansible is installed, However, we can use Windows Machine as control node. We can have multiple control nodes.
 Manage Node: Newtwork devices/servers managed with Ansible.Sometimes as called as hosts.
-Agent: Ansible does not require any agent on the managed nodes. It uses SSH to connect to.
+Agent: Ansible does not require any agent on the managed nodes.
+Ansible uses below modes to connect
+    Linux - SSH
+    Windows - Powershell Remoting
 Requirement: Python needs to installed in both Control Node & Mange Node.
-
-
-

@@ -1,0 +1,7 @@
+---
+- name: Restart the server
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: Restart the server
+      ansible.builtin.command: /sbin/reboot

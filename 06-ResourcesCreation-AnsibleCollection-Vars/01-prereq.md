@@ -26,6 +26,14 @@ openssl rand -base64 2048 > vault.pass
 ansible-vault create group_vars/all/pass.yml --vault-password-file vault.pass
 ```
 
+## Usage
+
+### Create EC2 instance
+
+```
+ansible-playbook -i inventory.ini create_ec2.yaml --vault-password-file vault.pass
+```
+
 
 
 
